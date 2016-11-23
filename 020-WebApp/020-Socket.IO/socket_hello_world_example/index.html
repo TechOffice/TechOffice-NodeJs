@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/socket.io-client/socket.io.js"></script>
+	</head>
+	<body>
+		<ul id="messages"></ul>
+		<form>
+			<input id="m" autocomplete="off"/><button>Send</button>
+		</form>
+		<script>
+			var socket = io();
+			$('form').submit(function(){
+				socket.emit('chat message', $("#m").val());
+				$("#m").val("");
+				return false;
+			});
+			socket.on("chat message", function(msg){
+				$("#messages").append($("<li>").text(msg));
+			});
+		</script>
+	</body>
+</html>
