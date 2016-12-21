@@ -1,10 +1,8 @@
-module.exports = function(FormDesigner){
-  FormDesigner.control = FormDesigner.control || {};
+module.exports = function(){
 
-  var InputControl = function(){
-    
-  };
-
-  FormDesigner.control.InputControl = InputControl;
-
+	var Control = function(){
+		
+	};
+	
+	return Control;
 };
