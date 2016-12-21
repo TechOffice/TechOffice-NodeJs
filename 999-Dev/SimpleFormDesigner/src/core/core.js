@@ -1,8 +1,8 @@
 module.exports = function(){
 	
-	var FormDesigner = function(id){
-		this.id = id;
-	}
+	var designer = function(){
+	};
 	
-	return FormDesigner;
+	
+	return designer;
 }
