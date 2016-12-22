@@ -1,26 +1,30 @@
 <html>
 	<head>
 		<style>
-			.handle{
+			.drawing.handle{
 				border: 1px solid black;
-				display: inline-block;
-				width: 5px;
-				height: 10px;
+				display: table-cell;
+				width: 20px;
+				height : 50px;
 			}
-			
-			.select{
-				display: inline-block;
-			}
-			
-			.content{
+
+			.drawing.select{
 				display: inline-block;
 			}
-			
+
+			.drawing.control{
+				display: table;
+			}
+
+			.drawing.content{
+				display: table-cell;
+			}
+
 			.drawing.div{
 				width: 100px;
-				height: 20px;
+				height: 50px;
 				border-style: dashed;
-				border-width:1px;  
+				border-width:1px;
 			}
 		</style>
 		<!-- Jquery Core -->
@@ -34,7 +38,7 @@
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<div id="designer"></div>
 	</body>
