@@ -32,7 +32,7 @@ module.exports = function(designer) {
     getSortableControl: function(control) {
       control.find("div.control.container").sortable({
         handle: ".handle",
-        connectWith: "#panel, div.control.container",
+        connectWith: "#drawingPanel, div.control.container",
         receive: function(event, ui) {
           // perform receive function
           controlManager.addControl(ui.sender, this, ui.helper);
@@ -41,12 +41,12 @@ module.exports = function(designer) {
       return control;
     },
     getHbox: function() {
-      var control = $("<div class='container'><div class='handle'></div><div class='content'>  <input type='checkbox'>HBox  <div class='control hbox container'></div></div></div>");
+      var control = $("<div class='container'><div class='handle'></div><div class='content'><input type='checkbox'>HBox<div class='control hbox container'>&nbsp;</div></div></div>");
       control = this.getSortableControl(control);
       return control;
     },
     getVbox: function() {
-      var control = $("<div class='container'><div class='handle'></div><div class='content'>  <input type='checkbox' />VBox  <div class='control vbox container'></div></div></div>");
+      var control = $("<div class='container'><div class='handle'></div><div class='content'>  <input type='checkbox' />VBox  <div class='control vbox container'>&nbsp;</div></div></div>");
       control = this.getSortableControl(control);
       return control;
     },
@@ -71,7 +71,7 @@ module.exports = function(designer) {
       return control;
     },
     getTable: function() {
-      var control = $("<div class='container'><div class='handle'></div><div class='content'> <input type='checkbox' />Table <table class='control'><tr> <td><div class='control container'></div> </td> <td><div class='control container'></div> </td> </td></tr><tr> <td><div class='control container'></div> </td> </td> <td><div class='control container'></div> </td> </td></tr> </table></div></div>");
+      var control = $("<div class='container'><div class='handle'></div><div class='content'> <input type='checkbox' />Table <table class='control'><tr> <td><div class='control container'>&nbsp;</div> </td> <td><div class='control container'>&nbsp;</div> </td> </td></tr><tr><td><div class='control container'>&nbsp;</div> </td> </td> <td><div class='control container'>&nbsp;</div> </td> </td></tr> </table></div></div>");
       control = this.getSortableControl(control);
       return control;
     },

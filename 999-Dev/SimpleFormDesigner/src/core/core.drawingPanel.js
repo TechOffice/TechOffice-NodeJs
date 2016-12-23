@@ -8,18 +8,24 @@ module.exports = function(designer){
 			var drawingPanel = $("<div></div>")
 			drawingPanel.attr("id", drawingPanelId);
 			drawingPanelColumn.append(drawingPanel);
-			
+
 			drawingPanel.sortable({
+				connectWith: "div.control.container",
+				handle: '.handle',
 				receive: function(event, ui){
-				},
-				handle: '.handle'
+				}
 			}).selectable({
 				cancel: ".handle",
-				filter: ".select",
+				filter: "input",
 				selected: function(event, ui){
-					var selected = $(ui.selected);
+					if (ui.selected.checked) {
+					  ui.selected.checked = false;
+					} else {
+					  ui.selected.checked = true;
+					}
 				},
 				unselected: function(event, ui){
+					ui.unselected.checked = false;
 				}
 			});
 			return drawingPanelColumn;
