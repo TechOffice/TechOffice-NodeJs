@@ -1,7 +1,5 @@
 designer = require("./core/core.js")();
-require("./core/core.control.js")(designer);
-require("./core/core.init.js")(designer);
-require("./core/core.render.js")(designer);
-require("./control/control.factory.js")(designer);
-
-
+require("./core/core.controlPanel.js")(designer);
+require("./core/core.drawingPanel.js")(designer);
+require("./core/core.attributePanel.js")(designer);
+require("./core/core.controlfactory.js")(designer);
