@@ -1,3 +1,7 @@
+/*jslint node: true */
+/*global designer:true*/
+"use strict";
+
 designer = require("./core/core.js")();
 require("./core/core.controlPanel.js")(designer);
 require("./core/core.drawingPanel.js")(designer);
