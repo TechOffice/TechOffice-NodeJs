@@ -1,9 +1,9 @@
 module.exports = function(designer){
-
+	
 	var drawingPanelId = "drawingPanel";
 	var drawingPanelWidth = 500;
 	var drawingPanelHeight = 300;
-
+	
 	function initControlPanel(controlPanelColumn){
 		var div = $("<div>Div</div>");
 		div.draggable({
@@ -14,33 +14,25 @@ module.exports = function(designer){
 		});
 		controlPanelColumn.append(div);
 	}
-
+	
 	function initDrawingPanel(drawingPanelColumn){
 		var drawingPanel = $("<div></div>")
 		drawingPanel.attr("id", drawingPanelId);
 		drawingPanel.width(drawingPanelWidth);
 		drawingPanel.height(drawingPanelHeight);
 		drawingPanelColumn.append(drawingPanel);
-
+		
 		drawingPanel.sortable({
 			receive: function(event, ui){
-			},
-			handle: '.handle'
-		}).selectable({
-			cancel: ".handle",
-			filter: ".select",
-			selected: function(event, ui){
-				var selected = $(ui.selected);
-			},
-			unselected: function(event, ui){
+				
 			}
-		});
+		}).selectable();
 	}
-
+	
 	function initAttributePanel(attributePanelColumn){
-
+		
 	}
-
+	
 	var init = function(id){
 		var container = $("#"+id);
 		var designerTable = $("<table><tr></tr></table>");
