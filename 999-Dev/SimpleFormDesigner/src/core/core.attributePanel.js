@@ -1,15 +1,19 @@
-module.exports = function(designer){
-  var attributePanelId = "attributePanel";
+/*jslint node: true */
+/*global $ */
+"use strict";
 
-  var attributePanel = {
-    getAttributePanel: function(){
-      var attributePanelColumn = $("<td></td>");
-      var attributePanel = $("<div>Attribute Panel</div>");
-      attributePanel.attr("id", attributePanelId);
-      attributePanelColumn.append(attributePanel);
-      return attributePanelColumn;
-    }
-  };
+module.exports = function (designer) {
+    var attributePanelId = "attributePanel";
 
-  designer.attributePanel = attributePanel;
-}
+    var attributePanel = {
+        getAttributePanel: function () {
+            var attributePanelColumn = $("<td></td>");
+            var attributePanel = $("<div>Attribute Panel</div>");
+            attributePanel.attr("id", attributePanelId);
+            attributePanelColumn.append(attributePanel);
+            return attributePanelColumn;
+        }
+    };
+
+    designer.attributePanel = attributePanel;
+};
