@@ -46,8 +46,8 @@ module.exports = function (designer) {
             return control;
         },
         getHbox: function () {
-            var control = $("<div class='container'><div class='handle'></div><div class='content'><input type='checkbox'>HBox<div class='control hbox container'>&nbsp;</div></div></div>");
             control = this.getSortableControl(control);
+            var control = $("<div class='container'><div class='handle'></div><div class='content'><input type='checkbox'>HBox<div class='control hbox container'>&nbsp;</div></div></div>");
             return control;
         },
         getVbox: function () {

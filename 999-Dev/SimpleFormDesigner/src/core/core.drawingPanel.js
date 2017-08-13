@@ -8,6 +8,7 @@ module.exports = function (designer) {
 
     var drawingPanel = {
         getDrawingPanel: function () {
+            var self = this;
             var drawingPanelColumn = $("<td></td>");
             var drawingPanel = $("<div></div>");
             drawingPanel.attr("id", drawingPanelId);
@@ -16,7 +17,10 @@ module.exports = function (designer) {
             drawingPanel.sortable({
                 connectWith: "div.control.container",
                 handle: '.handle',
-                receive: function (event, ui) {}
+                receive: function (event, ui) {
+                  var controls = designer.controlManager.getControls();
+                  debugger;
+                }
             }).selectable({
                 cancel: ".handle",
                 filter: "input",
