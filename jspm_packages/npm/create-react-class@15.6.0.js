@@ -1,0 +1,1 @@
+module.exports = require("npm:create-react-class@15.6.0/index.js");
