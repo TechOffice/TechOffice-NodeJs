@@ -1,1 +1,0 @@
-module.exports = require("npm:q@1.5.0/q.js");

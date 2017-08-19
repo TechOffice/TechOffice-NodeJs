@@ -1,1 +1,0 @@
-module.exports = require("npm:pascal-case@1.1.2/pascal-case.js");

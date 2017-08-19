@@ -1,1 +1,0 @@
-module.exports = require("npm:string_decoder@1.0.3/lib/string_decoder.js");

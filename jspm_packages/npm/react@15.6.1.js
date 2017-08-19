@@ -1,1 +1,0 @@
-module.exports = require("npm:react@15.6.1/react.js");
