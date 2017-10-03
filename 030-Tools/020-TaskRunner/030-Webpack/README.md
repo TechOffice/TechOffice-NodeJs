@@ -8,5 +8,11 @@ webpack is a module bundler for JavaScript Application.
 npm install webpack -g
 ```
 
+## Development Tools
+* Webpack Watch Mode
+* Webpack Dev Server
+* Webpack Dev Middleware
+
 ## Reference
 * https://webpack.github.io/
+* https://webpack.js.org/
