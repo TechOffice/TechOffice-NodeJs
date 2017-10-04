@@ -1,5 +1,4 @@
-import Test from './test.js'
+import test from './test'
 
 alert("It works. Test 2d");
-var test = new Test();
 test.doSomething();

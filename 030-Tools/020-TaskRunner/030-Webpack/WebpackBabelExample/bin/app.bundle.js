@@ -65,26 +65,53 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__test__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__test___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__test__);
 
+
+var _test = __webpack_require__(1);
+
+var _test2 = _interopRequireDefault(_test);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 alert("It works. Test 2d");
-__WEBPACK_IMPORTED_MODULE_0__test___default.a.doSomething();
+var test = new _test2.default();
+test.doSomething();
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = {
-	doSomething(){
-		alert("It works. Test 1.");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Test = function () {
+	function Test() {
+		_classCallCheck(this, Test);
 	}
-};
+
+	_createClass(Test, [{
+		key: "doSomething",
+		value: function doSomething() {
+			alert("It works. Test 1.");
+		}
+	}]);
+
+	return Test;
+}();
+
+exports.default = Test;
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=app.bundle.js.map
