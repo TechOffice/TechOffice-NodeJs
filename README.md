@@ -3,7 +3,7 @@
 ## NodeJs
 NodeJs is an event-driven Javascript Run-time Platform. It also provides Application Programming Interface (API) for NodeJs Application Development.
 
-There are a lot of application, framework, tools built on top of NodeJs. It facilitates the development of Javascript Language, Asynchronous Programming, Web Application and multimedia.
+There are a lot of application, framework, tools built on top of NodeJs. It facilitates the development of Javascript Language, Asynchronous Programming, Web Application and Multimedia.
 
 ## Example
 * [010-Core](010-Core/)
