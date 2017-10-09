@@ -1,7 +1,3 @@
-# Webpack Watch Mode
-
-## Create webpack.config.js
-```
 const path = require('path');
 
 module.exports = {
@@ -11,9 +7,3 @@ module.exports = {
 		filename: 'app.bundle.js'
 	}
 }; 
-```
-
-## execute webpack watch mode
-```
-webpack --progress --colors --watch
-```

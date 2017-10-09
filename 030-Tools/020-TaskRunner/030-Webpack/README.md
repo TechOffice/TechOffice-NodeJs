@@ -17,8 +17,9 @@ npm install webpack -g
 ## Example List
 * [WebpackHelloWorldExample](WebpackHelloWorldExample/)
 * [WebpackConfigExample](WebpackConfigExample/)
-* [WebpackBabelExample](WebpackBabelExample/)
 * [WebpackWatchModeExample](WebpackWatchModeExample/)
+* [WebpackBabelExample](WebpackBabelExample/)
+* WebpackReactExample
 
 
 ## Reference
