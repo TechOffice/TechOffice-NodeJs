@@ -1,5 +1,6 @@
-import Test from './test.js'
 
-alert("It works. Test 2d");
+import Test from './test';
+
+console.log("It works. Test 2d");
 var test = new Test();
 test.doSomething();

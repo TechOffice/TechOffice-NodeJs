@@ -1,9 +1,10 @@
+
 class Test {
-	
+
 	doSomething(){
-		alert("It works. Test 1.");
+		console.log("It works. Test 1.");
 	}
-	
+
 }
 
 export default Test;
