@@ -1,0 +1,15 @@
+{
+  "name": "lodash-hello-world-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "systemjs": "^0.20.18"
+  }
+}

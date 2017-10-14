@@ -1,0 +1,14 @@
+{
+  "name": "sequelizejs_hellow_world_example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^3.1.8"
+  }
+}

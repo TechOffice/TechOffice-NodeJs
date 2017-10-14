@@ -1,0 +1,13 @@
+{
+  "name": "npm_example",
+  "version": "1.0.0",
+  "dependencies": {},
+  "description": "## NPM NPM is NodeJs Package Manager. It is used to manage different package in NodeJs environment or NodeJs Project.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

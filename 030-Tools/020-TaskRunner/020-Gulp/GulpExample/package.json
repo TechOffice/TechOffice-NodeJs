@@ -1,0 +1,15 @@
+{
+  "name": "GulpExample",
+  "version": "0.0.0",
+  "description": "```\r npm init\r npm install --save-dev gulp\r ```\r Create gulpfile.js\r ```\r var gulp = require('gulp');\r gulp.task('default', function(){\r \t// The Gulp Task\r });\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
