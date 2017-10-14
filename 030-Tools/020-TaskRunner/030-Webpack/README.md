@@ -19,6 +19,7 @@ npm install webpack -g
 * [WebpackConfigExample](WebpackConfigExample/)
 * [WebpackWatchModeExample](WebpackWatchModeExample/)
 * [WebpackBabelExample](WebpackBabelExample/)
+* [WebpackBowerExample](WebpackBowerExample)
 * WebpackReactExample
 
 
