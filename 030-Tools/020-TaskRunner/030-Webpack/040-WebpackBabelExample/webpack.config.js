@@ -17,8 +17,5 @@ module.exports = {
                 }
 			}
 		]
-	},
-	resolve: {
-        modules: ["web_modules", "node_modules", "bower_components"]
-    }
+	}
 }; 
