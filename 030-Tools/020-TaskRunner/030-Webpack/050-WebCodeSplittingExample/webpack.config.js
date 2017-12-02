@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
 	entry: {
-		app: 	'./src/app.js'
+		app: 	'./src/app.js',
+		test: 	'./src/test.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'bin'),
-		filename: '[name].bundle.js',
-		chunkFilename: '[name].bundle.js'
+		filename: '[name].bundle.js'
 	},
 	devtool: 'source-map',
 	module: {
