@@ -1,6 +1,6 @@
 
 import Test from './test';
 
-console.log("It works. Test 2d");
+console.log("app.js: inline testing");
 var test = new Test();
 test.doSomething();

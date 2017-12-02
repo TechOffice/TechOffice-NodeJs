@@ -2,9 +2,12 @@
 class Test {
 
 	doSomething(){
-		console.log("It works. Test 1.");
+		console.log("Test: doSomething");
 	}
 
 }
 
 export default Test;
+
+console.log("test.js: inline testing");
+
