@@ -6,6 +6,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'bin'),
 		filename: 'app.bundle.js'
 	},
+	devtool: 'source-map',
 	module: {
 		loaders: [
 			{
@@ -13,20 +14,8 @@ module.exports = {
 				loader: 'babel-loader',
 				query: {
                     presets: ['es2015']
-                },
-				exclude: [
-					/bower_components/, 
-					/node_modules/
-				]
+                }
 			}
 		]
-	},
-	resolve: {
-        modules: [
-			"web_modules",
-			"node_modules", 
-			"bower_components"
-		],
-		descriptionFiles: ['bower.json']
-    }
+	}
 }; 
