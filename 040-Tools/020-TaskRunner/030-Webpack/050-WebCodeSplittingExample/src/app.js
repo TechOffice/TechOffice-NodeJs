@@ -1,5 +1,3 @@
-
-
 import('./test').then(function(modeule){
     var Test = modeule.default;
     var test = new Test();
