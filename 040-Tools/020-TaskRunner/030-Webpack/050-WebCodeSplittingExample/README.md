@@ -20,7 +20,12 @@ module.exports = {
 }; 
 ```
 
-Execute webpack
+## Dependencies
+* babel-plugin-syntax-dynamic-import
+* babel-preset-es2015
+
+**Execute webpack**
 ```
+yarn install
 webpack
 ```
